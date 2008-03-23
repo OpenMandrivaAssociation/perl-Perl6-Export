@@ -5,7 +5,7 @@ Name: perl-Perl6-Export
 Version: 0.07
 Release: %mkrel 1
 License: Artistic
-Group: Applications/CPAN
+Group: Development/Perl
 URL: http://search.cpan.org/dist/Perl6-Export/
 Source: http://www.cpan.org/modules/by-module/Perl6/Perl6-Export-%{version}.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
