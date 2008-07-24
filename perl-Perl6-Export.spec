@@ -3,7 +3,7 @@
 Summary: Implements the Perl 6 is export trait
 Name: perl-Perl6-Export
 Version: 0.07
-Release: %mkrel 1
+Release: %mkrel 3
 License: Artistic
 Group: Development/Perl
 URL: http://search.cpan.org/dist/Perl6-Export/
