@@ -1,15 +1,18 @@
-%define realname Perl6-Export
+%define upstream_name    Perl6-Export
+%define upstream_version 0.07
 
-Summary: Implements the Perl 6 is export trait
-Name: perl-Perl6-Export
-Version: 0.07
-Release: %mkrel 4
-License: Artistic
-Group: Development/Perl
-URL: http://search.cpan.org/dist/Perl6-Export/
-Source: http://www.cpan.org/modules/by-module/Perl6/Perl6-Export-%{version}.tar.bz2
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
+Summary:    Implements the Perl 6 is export trait
+License:    Artistic
+Group:      Development/Perl
+Url:        http://search.cpan.org/dist/Perl6-Export/
+Source0:    http://www.cpan.org/modules/by-module/Perl6/Perl6-Export-%{upstream_version}.tar.bz2
+
 BuildArch: noarch
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module prototypes the Perl 6 'exported' and 'exportable' traits
@@ -19,7 +22,7 @@ Instead of messing around with @EXPORT arrays, you just declare which subs
 are to be exported (or are exportable on request) as part of those subs.
 
 %prep
-%setup -q -n %{realname}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 yes y | %{__perl} Makefile.PL INSTALLDIRS=vendor
