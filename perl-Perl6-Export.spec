@@ -8,7 +8,7 @@ Release:	4
 Summary:	Implements the Perl 6 is export trait
 License:	Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/Perl6-Export/
+Url:		https://search.cpan.org/dist/Perl6-Export/
 Source0:	http://www.cpan.org/modules/by-module/Perl6/Perl6-Export-%{upstream_version}.tar.bz2
 
 BuildRequires:	perl-devel
