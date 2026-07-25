@@ -2,13 +2,13 @@
 %define upstream_version 0.07
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	5
 
 Summary:	Implements the Perl 6 is export trait
 License:	Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/Perl6-Export/
+Url:		https://metacpan.org/dist/Perl6-Export
 Source0:	http://www.cpan.org/modules/by-module/Perl6/Perl6-Export-%{upstream_version}.tar.bz2
 
 BuildRequires:	make
